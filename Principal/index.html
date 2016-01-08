@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+
+    
+    <div id='compas' style="position:absolute; top:0px; left:0px; z-index:1">  
+      <img src="images/compas.png" height="60" width="60" align="left" alt="compas" onclick="newArc()" />
+    </div>
+
+    <div id='reglaT' style="position:absolute; top:60px; left:0px; z-index:1">  
+      <img src="images/reglaT.png" height="60" width="40" align="left" alt="reglaT" onclick="reglaT.activateDeactivate()" />
+    </div>
+
+    <div id='reglaT_girar' style="position:absolute; top:80px; left:40px; z-index:1">  
+      <img src="images/reglaT_girar.png" height="40" width="20" align="left" alt="reglaT_girar" onclick="reglaT.rotate()" />
+    </div>
+    
+    <div id='escuadra45' style="position:absolute; top:120px; left:0px; z-index:1">  
+      <img src="images/escuadra45.png" height="60" width="45" align="left" alt="compas" onclick="reglaT.rotate()" />
+    </div>
+
+    <div id='escuadra45ah' style="position:absolute; top:130px; left:45px; z-index:1">  
+      <img src="images/escuadra45ah.png" height="20" width="15" align="left" alt="compas" onclick="reglaT.rotate()" />
+    </div>
+
+    <div id='escuadra45h' style="position:absolute; top:145px; left:45px; z-index:1">  
+      <img src="images/escuadra45h.png" height="20" width="15" align="left" alt="compas" onclick="reglaT.rotate()" />
+    </div>
+
+    <div id='canvas' style="position:absolute; top:0px; left:60px; z-index:1">  
+        <canvas id='myCanvas' width='800' height='600'>
+              Your browser does not support HTML5 Canvas.
+        </canvas>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/arco.js"></script>
+    <script src="js/reglaT.js"></script>
+    <script src="js/escuadra45.js"></script>
+    <script src="js/animacion.js"></script>
+  </body>
+</html>      
